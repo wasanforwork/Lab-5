@@ -30,25 +30,17 @@ class MyHomePage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Row(
           children: <Widget>[
-            const Icon(Icons.account_circle, size: 50, color: Colors.indigo),
-            const SizedBox(width: 16),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: const <Widget>[
-                Text(
-                  'โปรไฟล์ผู้ใช้',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold
-                  ),
-                ),
-                SizedBox(height: 4),
-                Text('แก้ไขรายละเอียดของคุณตรตงนี้'),
-              ],
-            )
+            Expanded(flex: 1, child: Container(color: Colors.red, height: 100)),
+            Expanded(
+              flex: 2,
+              child: Container(color: Colors.green, height: 100),
+            ),
+            Expanded(
+              flex: 1,
+              child: Container(color: Colors.blue, height: 100),
+            ),
           ],
-        )
+        ),
       ),
     );
   }
